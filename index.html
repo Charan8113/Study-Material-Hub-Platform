@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikbook - Study Material Hub</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        function navigateToHome() {
+            window.location.href = 'home.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login to Vikbook</h2>
+        <form onsubmit="event.preventDefault(); navigateToHome();">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Mobile Number" required>
+            <select required>
+                <option value="">Select Year of Study</option>
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
